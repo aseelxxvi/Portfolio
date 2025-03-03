@@ -458,7 +458,7 @@ span{
         font-size: 5rem;
     }
     .home-img img{
-        width: 70vw;
+        width: 60vw;
         margin-top: 4rem;
     }
     .about{
@@ -476,6 +476,11 @@ span{
     }
     .projects-container{
         grid-template-columns: repeat(2,1fr);
+    }
+    .projects-info a{
+        display: inline-flex;
+        width: 4rem;
+        height: 4rem;
     }
     
 }
