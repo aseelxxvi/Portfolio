@@ -459,7 +459,8 @@ span{
     }
     .home-img img{
         width: 60vw;
-        margin-top: 4rem;
+        margin-top: 0;
+        position: static;
     }
     .about{
         flex-direction: column-reverse;
