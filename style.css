@@ -448,7 +448,7 @@ span{
         margin: 3rem 0;
     }
     .home{
-        flex-direction: column-reverse;   /*before it was only column*/
+        flex-direction: column;   /*before it was only column*/
         margin-top: 2rem;
     }
     .home-content h3{
@@ -459,18 +459,21 @@ span{
     }
     .home-img img{
         /* oldwidth: 60vw;*/
-        width: 150px;
+        width: 350px;
         margin-top: 0;
         position: static;
         /*new*/
-        height: 150px;
+        height: 350px;
     }
     .about{
         flex-direction: column-reverse;
     }
     .about img{
-        width: 70vw;
-        margin-top: 4rem;
+        /*oldwidth: 70vw;*/
+        /*new*/
+        width: 400px;
+        margin-top: 0;
+        height: 400px;
     }
     .services h2{
         margin-bottom: 3rem;

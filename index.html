@@ -44,7 +44,7 @@
         </div>
 
         <div class="home-img">
-            <img src="images/img.jpg" alt=""
+            <img src="images/img.jpg" alt="">
         </div>
 
     </section>
@@ -139,18 +139,20 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form>
+        <form action="https://forms.gle/F3MyHRzjfx7mypgR6"  method="POST" target="hidden_iframe" onsubmit="submitForm(); return false;">
             <div class="input-box">
-                <input type="text" placeholder="Full Name" name="user_name" required>
-                <input type="email" placeholder="Email" name="user_email" required>
+                <input type="text" placeholder="Full Name" name="entry.529650828" required>
+                <input type="email" placeholder="Email" name="entry.1553508639" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Subject" name="user_subject" required>
+                <input type="number" placeholder="Phone Number" name="entry.2121905885" required>
+                <input type="text" placeholder="Subject" name="entry.1335170073" required>
             </div>
-            <textarea   cols="30" rows="10" placeholder="Your Message" name="user_message" required></textarea>
+            <textarea   cols="30" rows="10" placeholder="Your Message" name="entry.1086958187" required></textarea>
 
             <input type="submit" value="Send Message" class="btn">
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
+           <!-- <input type="hidden" name="fvv" value="1">-->
             
         </form>
     </section>
@@ -188,7 +190,13 @@
 
 
     <script src="script.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        function submitForm() {
+          alert("Thank You! Your message has been sent.");
+          document.querySelector("form").reset(); // This clears the form after submission
+        }
+      </script>
+    
 
 </body>
 </html>
