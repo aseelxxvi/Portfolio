@@ -448,7 +448,7 @@ span{
         margin: 3rem 0;
     }
     .home{
-        flex-direction: column;
+        flex-direction: column-reverse;   /*before it was only column*/
         margin-top: 2rem;
     }
     .home-content h3{
@@ -458,9 +458,12 @@ span{
         font-size: 5rem;
     }
     .home-img img{
-        width: 60vw;
+        /* oldwidth: 60vw;*/
+        width: 150px;
         margin-top: 0;
         position: static;
+        /*new*/
+        height: 150px;
     }
     .about{
         flex-direction: column-reverse;
