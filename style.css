@@ -475,12 +475,15 @@ span{
         margin-bottom: 3rem;
     }
     .projects-container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     .projects-info a{
         display: inline-flex;
         width: 4rem;
         height: 4rem;
+    }
+    .projects-container .projects-box{
+        min-height: 350px;
     }
     
 }
